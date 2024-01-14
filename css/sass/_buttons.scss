@@ -46,13 +46,13 @@ option {
   display: inline-block;
   padding: 8px 24px;
 
-// use cores desejada...
+  // use cores desejada...
   color: $white-light;
   background: linear-gradient(
-    224.78deg,
-    #849170 8.12%,
-    #515D3D 92.21%
-  ) !important;
+    225deg,
+    $primary-normal 8.12%,
+    $secondary-dark 92.21%
+  );
 
   border-radius: 4px;
   border: 0;
@@ -67,3 +67,26 @@ option {
   }
 }
 
+.btn-small {
+  display: inline-block;
+  color: $white-light;
+  transition: 0.6s ease;
+  padding: 12px 28px 12px 28px;
+  text-align: center;
+
+  background: linear-gradient(
+    225deg,
+    $primary-normal 8.12%,
+    $secondary-dark 92.21%
+  );
+  border-radius: 10px;
+
+  box-shadow: 0px 7px 32px rgba(92, 118, 46, 0.6);
+
+  @include typeface-1(h7, desktop);
+  @include responsive(s) {
+    @include typeface-1(h7, mobile);
+  }
+
+  position: relative;
+}
