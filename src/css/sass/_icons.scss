@@ -43,3 +43,13 @@
     max-width: 144px;
   }
 }
+
+.icon-xxl{
+  max-width: 220px;
+  transition: .5s ease;
+
+  @include responsive(s){
+    max-width: 180px;
+  }
+
+}

@@ -1,6 +1,7 @@
-<!doctype html>
-<html lang="en">
-  <head>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="theme-color" content="#060802">
@@ -9,7 +10,9 @@
     <meta name="keywords" content="frontend, backend, animation, css, development web, ux, ui, uxui">
     <meta name="author" content="Marcus Silva">
 
-    <link rel="icon" type="image/png" href="./src/img/favicon.png">
+    <!--============= CSS =============-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="svg/favicon.png">
 
     <!--============= META TAGS PRIMARIAS =============-->
     <title>Paybank | O banco para chamar de seu.</title>
@@ -29,9 +32,38 @@
     <meta property="og:title" content="Paybank | O banco para chamar de seu.">
     <meta property="og:description" content="Paybank | O banco para chamar de seu.">
     <meta property="og:image" content="svg/">
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+    <!--============= SCRIPTS =============-->
+    <script src="js/svg-inject.min.js"></script>
+
+</head>
+
+<body>
+    <!--============= HEADER =============-->
+    <header>
+        <nav>
+            <div>
+                <img src="svg/logo-white.svg" alt="" onload="SVGInject(this)" />
+            </div>
+
+            <div>
+                <div class="flex-start-row ">
+                    <div>
+                        <a href="#" class="disappear link-menu">Features</a>
+                    </div>
+                    <div class="ml-3">
+                        <a href="#" class="disappear link-menu">Nosso App</a>
+                    </div>
+                    <div class="ml-3">
+                        <a href="#" class="btn-small">Junte-se a nós</a>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <script src="js/app.js"></script>
+</body>
+
 </html>
