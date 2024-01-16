@@ -634,7 +634,7 @@ $gutter: 32px;
 }
 
 // Posição do numero do cartao - Verso
-.card-number{
+.card-number {
   position: absolute;
   top: 0;
   right: 0;
@@ -667,30 +667,76 @@ $gutter: 32px;
 }
 
 // Disposição dos itens no cartão - Frente
-.card-content-description{
+.card-content-description {
   position: absolute;
   bottom: 0;
   left: 0;
 }
 
 // Posicao do Logo no cartão - Frente
-.card-logo{
+.card-logo {
   position: absolute;
   top: 0;
   left: 0;
 }
 
 // Posição do icone de "aproximacao" - Frente
-.card-contactless{
+.card-contactless {
   position: absolute;
   top: 0;
   right: 0;
 }
 
-.div-card{
+.div-card {
   min-height: 500px;
 
-  @include responsive(s){
+  @include responsive(s) {
     min-height: 400px;
   }
 }
+
+// =========> CONTROLE TOTAL <=========
+
+.control {
+  max-height: 420px;
+
+  position: relative;
+}
+
+.card-transform-front-2 {
+  top: 3%;
+  left: 4%;
+
+  transform: skewX(20deg) skewY(-20deg) scale(0.8);
+
+  //transform: skewX(-15deg) skewY(20deg) rotate(-85deg);
+
+  animation: card-transform-front-2 3s ease-in-out infinite alternate;
+}
+
+.card-transform-verse-2 {
+  top: 10%;
+  right: 5%;
+  transform: skewX(20deg) skewY(-20deg) scale(0.8);
+
+  animation: card-transform-verse-2 3s ease-in-out infinite alternate;
+}
+
+@keyframes card-transform-front-2 {
+  0% {
+    transform: rotateX(5deg) rotateY(10deg) rotate(-10deg) scale(0.8);
+  }
+  100% {
+    transform: rotateX(20deg) rotateY(-20deg) rotate(-10deg) scale(0.8);
+  }
+}
+
+@keyframes card-transform-verse-2 {
+  0% {
+    transform: rotateX(-15deg) rotateY(-30deg) rotate(10deg) scale(0.8);
+  }
+  100% {
+    transform: rotateX(15deg) rotateY(30deg) rotate(10deg) scale(0.8);
+  }
+}
+

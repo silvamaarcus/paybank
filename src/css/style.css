@@ -805,6 +805,41 @@
   }
 }
 
+.control {
+  max-height: 420px;
+  position: relative;
+}
+
+.card-transform-front-2 {
+  top: 3%;
+  left: 4%;
+  transform: skewX(20deg) skewY(-20deg) scale(0.8);
+  animation: card-transform-front-2 3s ease-in-out infinite alternate;
+}
+
+.card-transform-verse-2 {
+  top: 10%;
+  right: 5%;
+  transform: skewX(20deg) skewY(-20deg) scale(0.8);
+  animation: card-transform-verse-2 3s ease-in-out infinite alternate;
+}
+
+@keyframes card-transform-front-2 {
+  0% {
+    transform: rotateX(5deg) rotateY(10deg) rotate(-10deg) scale(0.8);
+  }
+  100% {
+    transform: rotateX(20deg) rotateY(-20deg) rotate(-10deg) scale(0.8);
+  }
+}
+@keyframes card-transform-verse-2 {
+  0% {
+    transform: rotateX(-15deg) rotateY(-30deg) rotate(10deg) scale(0.8);
+  }
+  100% {
+    transform: rotateX(15deg) rotateY(30deg) rotate(10deg) scale(0.8);
+  }
+}
 .s-0 {
   margin: 0;
   padding: 0;
@@ -2043,4 +2078,59 @@ option {
     line-height: 150%;
     font-weight: 500;
   }
+}
+
+.btn-freq {
+  display: inline-block;
+  background: linear-gradient(225deg, #515d3d 8.12%, #d2f988 92.21%);
+  padding: 16px 64px 16px 24px;
+  border-radius: 8px;
+  transform: skewX(-10deg);
+  position: relative;
+  font-family: "M PLUS 1", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 500;
+  z-index: 1;
+}
+@media screen and (max-width: 960px) {
+  .btn-freq {
+    font-family: "M PLUS 1", sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 500;
+  }
+}
+.btn-freq::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  width: 18px;
+  height: 18px;
+  transform: translate(-50%, -50%);
+  background-image: url("../../../src/svg/icon-arrow-right.svg");
+  background-size: cover;
+  transition: 0.5s ease;
+  z-index: -1;
+}
+.btn-freq::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: -16px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #a9c96b;
+  border-radius: 8px;
+  transition: 0.5s ease;
+  z-index: -2;
+}
+.btn-freq:hover::before {
+  top: 0;
+  left: 0;
+}
+.btn-freq:hover::after {
+  top: 50%;
+  right: 8px;
 }/*# sourceMappingURL=style.css.map */
