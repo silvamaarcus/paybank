@@ -699,8 +699,6 @@ $gutter: 32px;
 
 .control {
   max-height: 420px;
-
-  position: relative;
 }
 
 .card-transform-front-2 {
@@ -708,8 +706,6 @@ $gutter: 32px;
   left: 4%;
 
   transform: skewX(20deg) skewY(-20deg) scale(0.8);
-
-  //transform: skewX(-15deg) skewY(20deg) rotate(-85deg);
 
   animation: card-transform-front-2 3s ease-in-out infinite alternate;
 }
@@ -739,4 +735,3 @@ $gutter: 32px;
     transform: rotateX(15deg) rotateY(30deg) rotate(10deg) scale(0.8);
   }
 }
-
