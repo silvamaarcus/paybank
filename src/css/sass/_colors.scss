@@ -56,10 +56,13 @@ $yellow-light: #ffd76b;
 
 .color-gradient {
   display: inline-block;
-  background: linear-gradient(217deg, #bbe768 2.12%, #496022 98.96%) !important;
+  background: linear-gradient(
+    224.78deg,
+    $primary-normal 8.12%,
+    $secondary-dark 92.21%
+  );
   background-clip: text;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
+  -webkit-text-fill-color: transparent;
 }
 
 .color-gray {

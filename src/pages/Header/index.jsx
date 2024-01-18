@@ -6,11 +6,11 @@ const Header = () => {
       <header>
         <nav>
           <a href="/">
-            <img src={logo} alt="" onload="SVGInject(this)" />
+            <img src={logo} alt="" />
           </a>
 
           <div>
-            <div className="flex-start-row ">
+            <div className="flex-start-row">
               <div>
                 <a href="#" className="disappear link-menu">
                   Features

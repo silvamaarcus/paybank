@@ -19,10 +19,10 @@
 
 .color-gradient {
   display: inline-block;
-  background: linear-gradient(217deg, #bbe768 2.12%, #496022 98.96%) !important;
-  background-clip: text;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
+  background: linear-gradient(224.78deg, #515d3d 8.12%, #d2f988 92.21%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .color-gray {
