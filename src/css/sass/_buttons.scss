@@ -215,3 +215,73 @@ option {
     }
   }
 }
+
+.btn-apple {
+  display: inline-block;
+
+  padding: 16px 24px 16px 54px;
+
+  background: $white-light;
+  color: $black-dark;
+
+  @include typeface-1(h7, desktop);
+  @include responsive(s) {
+    @include typeface-1(h7, mobile);
+  }
+
+  border-radius: 10px;
+
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    width: 18px;
+    height: 22px;
+
+    transform: translate(-50%, -50%);
+
+    top: 50%;
+    left: 32px;
+
+    background-image: url("../../src/svg/icon-apple.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.btn-google {
+  display: inline-block;
+
+  padding: 16px 24px 16px 54px;
+
+  background: $white-light;
+  color: $black-dark;
+
+  @include typeface-1(h7, desktop);
+  @include responsive(s) {
+    @include typeface-1(h7, mobile);
+  }
+
+  border-radius: 10px;
+
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    width: 18px;
+    height: 22px;
+
+    transform: translate(-50%, -50%);
+
+    top: 50%;
+    left: 32px;
+
+    background-image: url("../../src/svg/icon-googleplay.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}

@@ -2132,4 +2132,70 @@ option {
 .btn-freq:hover::after {
   top: 50%;
   right: 8px;
+}
+
+.btn-apple {
+  display: inline-block;
+  padding: 16px 24px 16px 54px;
+  background: #f8fff5;
+  color: #060802;
+  font-family: "M PLUS 1", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 500;
+  border-radius: 10px;
+  position: relative;
+}
+@media screen and (max-width: 960px) {
+  .btn-apple {
+    font-family: "M PLUS 1", sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 500;
+  }
+}
+.btn-apple::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 22px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 32px;
+  background-image: url("../../src/svg/icon-apple.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.btn-google {
+  display: inline-block;
+  padding: 16px 24px 16px 54px;
+  background: #f8fff5;
+  color: #060802;
+  font-family: "M PLUS 1", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 500;
+  border-radius: 10px;
+  position: relative;
+}
+@media screen and (max-width: 960px) {
+  .btn-google {
+    font-family: "M PLUS 1", sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 500;
+  }
+}
+.btn-google::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 22px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 32px;
+  background-image: url("../../src/svg/icon-googleplay.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }/*# sourceMappingURL=style.css.map */
