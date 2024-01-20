@@ -1,5 +1,6 @@
 import icon_cardCred_bg from "../../../svg/icon-cardCred-bg.svg";
 import icon_download_bg from "../../../svg/icon-download-bg.svg";
+import icon_phone from "../../../svg/fig9-paybank.svg";
 
 const Futuro = () => {
   return (
@@ -45,8 +46,9 @@ const Futuro = () => {
               </div>
             </div>
           </div>
-          <div className="grid-1 disappear"></div>
-          <div className="grid-5"> </div>
+          <div className="grid-6">
+            <img src={icon_phone} alt="Smartphone" />
+          </div>
         </div>
       </section>
     </>
