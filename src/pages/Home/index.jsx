@@ -2,6 +2,7 @@ import Hero from "./Hero";
 import Controle from "./Controle";
 import Resolva from "./Resolva";
 import Futuro from "./Futuro";
+import Investimentos from "./Investimentos";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <Controle />
       <Resolva />
       <Futuro />
+      <Investimentos />
     </>
   );
 };
