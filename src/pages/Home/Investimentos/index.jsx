@@ -12,12 +12,12 @@ const Investimentos = () => {
               Sua segurança, confiabilidade, controle de suas finanças é o
               principal compromisso da Paybank.
             </p>
-            <div className="flex-start-row my-4 bb-black">
+            <div className="flex-start-row my-4 pb-5 bb-black">
               <a href="#" className="btn-apple">
-                Apple pay
+                Apple Pay
               </a>
               <a href="#" className="btn-google ml-3">
-                Google pay
+                Google Pay
               </a>
             </div>
             <div className="mt-4">
@@ -28,8 +28,8 @@ const Investimentos = () => {
               </p>
             </div>
           </div>
-          <div className="grid-6">
-            <img src={img_investimentos} alt="Smartphone" />
+          <div className="grid-6 img-invest">
+            <img src={img_investimentos} alt="Investimentos" />
           </div>
         </div>
       </section>

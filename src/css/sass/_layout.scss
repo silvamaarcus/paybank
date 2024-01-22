@@ -267,19 +267,19 @@ $gutter: 32px;
 
 // Borda abaixo do elemento.
 .bb-black {
-  border-bottom: 1px solid $black-light;
+  border-bottom: 1px solid $white-darken;
 }
 // Borda acima do elemento.
 .bt-black {
-  border-top: 1px solid $black-light;
+  border-top: 1px solid $white-darken;
 }
 // Borda a esquerda do elemento.
 .bl-black {
-  border-left: 1px solid $black-light;
+  border-left: 1px solid $white-darken;
 }
 // Borda a direita do elemento.
 .br-black {
-  border-right: 1px solid $black-light;
+  border-right: 1px solid $white-darken;
 }
 
 // Borda MAIS GROSSA abaixo do elemento.
@@ -733,5 +733,58 @@ $gutter: 32px;
   }
   100% {
     transform: rotateX(15deg) rotateY(30deg) rotate(10deg) scale(0.8);
+  }
+}
+
+// Section Investimentos
+
+.img-invest {
+  position: relative;
+
+  img {
+    z-index: 0;
+    position: relative;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    width: 373px;
+    height: 609px;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background-image: url("../svg/pattern-green.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    z-index: -1;
+  }
+
+  @include responsive(s) {
+  
+    &::before {
+      content: "";
+      position: absolute;
+  
+      width: 373px;
+      height: 309px;
+  
+      top: 90%;
+      left: 50%;
+  
+      transform: translate(-50%, -50%);
+  
+      background-image: url("../svg/pattern-green.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+  
+      z-index: -1;
+    }
+  
   }
 }
