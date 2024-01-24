@@ -46,7 +46,8 @@ const Futuro = () => {
               </div>
             </div>
           </div>
-          <div className="grid-6">
+          <div className="grid-2 disappear"></div>
+          <div className="grid-4">
             <img src={icon_phone} alt="Smartphone" />
           </div>
         </div>

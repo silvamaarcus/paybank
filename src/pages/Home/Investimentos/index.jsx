@@ -12,25 +12,15 @@ const Investimentos = () => {
               Sua segurança, confiabilidade, controle de suas finanças é o
               principal compromisso da Paybank.
             </p>
-            <div className="my-4 pb-5 bb-black">
+            <div className="mt-4 pb-3 bb-black">
               <div className="flex-start-row">
-                <a href="#" className="btn-apple">
-                  Apple Pay
-                </a>
-                <a href="#" className="btn-google ml-3">
-                  Google Pay
-                </a>
-              </div>
-
-              <div className="mt-4">
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Excepturi culpa maiores adipisci at animi quis vero reiciendis
-                  ex? Fugit eaque quam dolorem esse commodi eum fugiat aliquam
-                  officiis sunt aut.
-                </p>
-              </div>
+                <div className="border"></div>
+                <div className="border"></div>
+                <div className="border"></div>
+                <div className="border"></div>
+              </div>              
             </div>
+
             <div className="mt-4">
               <h4 className="bold">Pague com o celular</h4>
               <p className="mt-3 max-width-p">
