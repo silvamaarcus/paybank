@@ -3,6 +3,7 @@ import Controle from "./Controle";
 import Resolva from "./Resolva";
 import Futuro from "./Futuro";
 import Investimentos from "./Investimentos";
+import Pessoas from "./Pessoas";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Resolva />
       <Futuro />
       <Investimentos />
+      <Pessoas />
     </>
   );
 };
